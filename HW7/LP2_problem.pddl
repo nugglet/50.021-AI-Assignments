@@ -1,0 +1,15 @@
+; Logistic Problem 2, Problem
+(define (problem LP2)
+   (:domain LP1)
+   (:objects changi tampines bedok package1 truck)
+   (:init (loc tampines)
+          (loc bedok)
+          (loc changi)
+          (truck truck)
+          (package package1)
+          (truck-at tampines)
+          (package-at package1 bedok)
+          (free truck)
+          )
+         
+   (:goal (and (package-at package1 changi))))
